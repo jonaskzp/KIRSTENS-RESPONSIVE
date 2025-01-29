@@ -1,0 +1,296 @@
+/*CONFIGURAÇÕES GERAIS*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+      font-family: "Mulish", sans-serif;
+      font-size: 62.5%;
+}
+
+body {
+    background-color: #333;
+    line-height: 2rem;
+}
+
+/*ESTILO BOTÕES*/
+button{ 
+      
+    color: white;    
+    text-transform: uppercase  ;
+    font-family: "Mulish", sans-serif;
+    background: #cf3119;
+    padding: 1.5rem;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: .8rem;
+    cursor: pointer;     
+}  
+
+/*HEADER FIXO*/
+
+.pagefix{
+    background-repeat: no-repeat;
+    background-image: url(./assets/05.png);
+    background-position: left;
+    background-size: 3rem;
+    padding-top: .8rem;
+    padding-left:4.5rem;
+    width:100%vh;
+    height: 4.5rem;
+}
+header {
+      padding: .5rem;
+      position: absolute; 
+      background-color: #333; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    }  
+.pagefix a { 
+        font-size: 1rem;
+        color: #f0f0f0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+        text-decoration: none;
+          
+      }
+.pagefix ul li  { 
+        margin-right: 1.5rem;
+        position: center;
+         display: inline;
+          
+      }
+
+
+
+/*CAIXA 1 BEM VINDO-WALLPAPPER*/
+
+    .box {  /*imagem de fundo esta aqui*/   
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap; 
+      background-image: url(./assets/unive.avif);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      max-width: 120rem;
+      height: 58rem;
+    }
+
+    .imagem-secundaria {
+        margin-left: 14.5rem;
+        margin-top: 40.69rem;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-image: url('./assets/FUNDO\ INICIO.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+        z-index: 0; /* Atrás do texto, mas acima do fundo */
+    }
+
+    .box h1{
+          font-family: "Mulish", sans-serif;
+          font-size: 3.9rem;
+          line-height:3.4rem;
+          color:#cf3119;
+          margin-top: 5rem;
+          margin-bottom: 2.5rem;
+    }
+    .box a {
+        font-weight: normal;
+        font-size: 1.8rem;
+        color: #f1f7ef; 
+    }
+
+    .one-button{
+      position: absolute; 
+      z-index: 10;
+        padding-top: 2rem;
+        margin-left: 20%;
+     }
+
+/* BOX2- NOSSO TRABALHO */
+
+  .container-2 {
+    background-color: #cf311917;
+    margin: 1rem .5rem 1.5rem .5rem;
+    border: solid #cf3119;
+    border-radius: .8rem;
+    padding: 2.5rem;
+    width : 100%vh;
+    height: 30rem;
+  }
+
+  .container-2 h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    font-size: 4rem; 
+    color:  #f7f0ef; 
+  }
+
+  .container-2 h2{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    margin-top: 3rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #cf3119;
+   
+  }
+
+  .two-button {
+    margin-left: 5rem;
+    margin-top: 5rem;
+   
+  }
+
+
+/* GALERIA 1 GRID 4:1 */
+.gallery{      
+  overflow: scroll; 
+  width: 35rem;
+  padding: .5rem;
+  margin-top: 3.2rem;
+  margin-left: .5rem;
+  display: grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap: 1.2rem; }
+
+
+.item{ /*DESENHO LINHA CAIXA DOS  4:1 GRID*/
+  cursor: pointer;
+  width: 28.5rem; 
+  height: 50rem;
+  border: solid #cf3119;
+  padding: 1rem;
+  text-align: left ;
+  background-color: #cf311917;
+  border-radius:  .8rem;
+  overflow: hidden; 
+  }
+  .item img{ /* confg imagem grid*/
+    filter: invert(100%);
+    width: 10rem; /* Largura */
+    height:  10rem; /* Altura igual à largura */
+    object-fit: cover; /* Ajusta a imagem sem distorcer */
+    margin: 2.5rem 7rem;
+
+  }
+  .item h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.3rem;
+    color: #cf3119;
+    gap: 1.5rem;
+    margin-bottom:3.5rem;
+  }
+.item span {
+margin-bottom: 22.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+  font-size: 1.7rem;
+  color: #f1f7ef;
+  gap: 5px;
+  }
+
+
+/*grid 3:1*/
+.service  {  /* area onde esta o grid*/
+  overflow: auto;
+  width: 35REM;
+  height: 80rem;
+margin-top: 2.5rem;
+padding: .5rem;
+margin: solid green;
+
+ } 
+ 
+   /*desenho da caixa do grid*/
+   .item-2{ 
+    margin-bottom: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    width: 34rem; 
+    height: 40rem;
+    border: solid #cf3119;
+    padding: 1rem;
+    background-color: #cf311917;
+    border-radius:  .8rem;
+
+  }
+  
+   /*CONFIGS  PRIMEIRA LINHA GRID*/
+.image-1 img{
+  display: flex;
+  margin-left: 10.5rem;
+  margin-bottom: 1.5rem;
+  filter: invert(100%);
+  width: 13rem;/* Largura */
+  height:  13rem;/ /* Altura igual à largura */
+  
+}
+
+.item-2 h1{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+  font-size: 2.5rem;
+  color: #cf3119;
+  text-align: center;
+  margin-bottom: 1.5rem;
+   } 
+
+   .item-2 p {
+    margin-bottom: 1.5rem;
+
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+    text-align: center;
+     color:  #f7f0ef;
+    }
+
+ .details ul{
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+  color:  #f7f0ef;
+  margin-left: 2.5rem;
+  padding-left: 4rem;
+  list-style-type:disc;
+ }
+
+  /*CONFIGS  SEGUNDA LINHA GRID*/
+
+ .item-3 {  /*config desenho caixa*/
+  
+  margin-bottom: 2rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  cursor: pointer;
+  width: 34rem; 
+  height: 40rem;
+  border: solid #cf3119;
+  background-color: #cf311917;
+  border-radius:  .8rem;
+ }
+ .item-3 img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+.grid3 h1 {
+  position: relative;
+  padding-bottom: 5rem;
+  margin-left:  1.5rem;
+  font-size: 3.5rem;
+  color: #19cf22;
+}
+
+
+
+
+
