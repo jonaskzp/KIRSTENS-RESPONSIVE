@@ -4,12 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
       font-family: "Mulish", sans-serif;
       font-size: 62.5%;
 }
-
 body {
     background-color: #333;
     line-height: 2rem;
@@ -30,9 +28,11 @@ button{
     border-radius: .8rem;
     cursor: pointer;     
 }  
+button:hover {
+  background: #972210;
+}
 
 /*HEADER FIXO*/
-
 .pagefix{
     background-repeat: no-repeat;
     background-image: url(./assets/05.png);
@@ -63,10 +63,7 @@ header {
           
       }
 
-
-
 /*CAIXA 1 BEM VINDO-WALLPAPPER*/
-
     .box {  /*imagem de fundo esta aqui*/   
       padding: 2rem;
       display: flex;
@@ -79,7 +76,6 @@ header {
       max-width: 120rem;
       height: 58rem;
     }
-
     .imagem-secundaria {
         margin-left: 14.5rem;
         margin-top: 40.69rem;
@@ -92,7 +88,6 @@ header {
         opacity: 0.7;
         z-index: 0; /* Atrás do texto, mas acima do fundo */
     }
-
     .box h1{
           font-family: "Mulish", sans-serif;
           font-size: 3.9rem;
@@ -106,7 +101,6 @@ header {
         font-size: 1.8rem;
         color: #f1f7ef; 
     }
-
     .one-button{
       position: absolute; 
       z-index: 10;
@@ -115,7 +109,6 @@ header {
      }
 
 /* BOX2- NOSSO TRABALHO */
-
   .container-2 {
     background-color: #cf311917;
     margin: 1rem .5rem 1.5rem .5rem;
@@ -125,13 +118,11 @@ header {
     width : 100%vh;
     height: 30rem;
   }
-
   .container-2 h1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
     font-size: 4rem; 
     color:  #f7f0ef; 
   }
-
   .container-2 h2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
     margin-top: 3rem;
@@ -141,13 +132,11 @@ header {
     color: #cf3119;
    
   }
-
   .two-button {
     margin-left: 5rem;
     margin-top: 5rem;
    
   }
-
 
 /* GALERIA 1 GRID 4:1 */
 .gallery{      
@@ -158,9 +147,8 @@ header {
   margin-left: .5rem;
   display: grid;
   grid-template-columns:repeat(4, 1fr);
-  gap: 1.2rem; }
-
-
+  gap: 1.2rem;
+ }
 .item{ /*DESENHO LINHA CAIXA DOS  4:1 GRID*/
   cursor: pointer;
   width: 28.5rem; 
@@ -196,21 +184,31 @@ margin-bottom: 22.5rem;
   color: #f1f7ef;
   gap: 5px;
   }
+  /*HOVERS*/
+  .item:hover {
+    background-color: #cf3119;        
+  }
+  .item:hover h1 {
+    color: rgb(17, 15, 13);
+  }
+  .item:hover span{
+    color:rgb(17, 15, 13);
+  }
+  .item:hover h2 {
+    color: rgb(17, 15, 13);
+  }
+.item:hover img{ /* confg imagem grid*/
+  filter: invert(00%); }
 
-
-/*grid 3:1*/
+/*GRID 3:1- DIVIDIDO EM 2 PARTES */
 .service  {  /* area onde esta o grid*/
-  overflow: auto;
   width: 35REM;
-  height: 80rem;
+  height:auto;
 margin-top: 2.5rem;
 padding: .5rem;
 margin: solid green;
-
  } 
- 
-   /*desenho da caixa do grid*/
-   .item-2{ 
+   .item-2{   /*desenho da caixa do grid*/
     margin-bottom: 2rem;
     margin-left: .5rem;
     margin-right: .5rem;
@@ -223,7 +221,6 @@ margin: solid green;
     border-radius:  .8rem;
 
   }
-  
    /*CONFIGS  PRIMEIRA LINHA GRID*/
 .image-1 img{
   display: flex;
@@ -234,7 +231,6 @@ margin: solid green;
   height:  13rem;/ /* Altura igual à largura */
   
 }
-
 .item-2 h1{
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
   font-size: 2.5rem;
@@ -242,7 +238,6 @@ margin: solid green;
   text-align: center;
   margin-bottom: 1.5rem;
    } 
-
    .item-2 p {
     margin-bottom: 1.5rem;
 
@@ -251,7 +246,6 @@ margin: solid green;
     text-align: center;
      color:  #f7f0ef;
     }
-
  .details ul{
   margin-top: 4rem;
   font-size: 1.8rem;
@@ -261,11 +255,9 @@ margin: solid green;
   padding-left: 4rem;
   list-style-type:disc;
  }
-
   /*CONFIGS  SEGUNDA LINHA GRID*/
-
  .item-3 {  /*config desenho caixa*/
-  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
   margin-bottom: 2rem;
   margin-left: .5rem;
   margin-right: .5rem;
@@ -281,15 +273,301 @@ margin: solid green;
   height: 100%;
   object-fit: cover;
  }
-
 .grid3 h1 {
+  display: flex;
   position: relative;
+  margin-top: -5rem;
   padding-bottom: 5rem;
   margin-left:  1.5rem;
   font-size: 3.5rem;
-  color: #19cf22;
+  color:  #cf3119 ;
+}
+    /*HOVERS*/  
+    /*grid 3:1 linha 1*/
+              .image-1:hover img{
+                  filter: invert(00%);
+                  
+                }
+              .item-2:hover {
+                background-color: #cf3119;        
+              }
+              .item-2:hover h1 {
+                color: rgb(17, 15, 13);
+              }
+              .item-2:hover p{
+                color:rgb(17, 15, 13);
+              }
+              .item-2:hover ul{
+                color:rgb(17, 15, 13);
+              }
+          /*container 3:1 só fotos*/
+          .item-3 img:hover { 
+            transition: 0.3s;
+            filter: hue-rotate(35deg) contrast(50%);
+
+          }
+          .item-3:hover h1{  /*config desenho caixa*/
+          color: #972210;
+          transition-delay: 0.8ms;
+          font-size: 4.5rem;
+          }
+
+    /*BOX PRA QUEM*/
+      .p-quem{  /*config area caixa*/
+        width: 100%VH; 
+        height: auto;
+        background-color: #333 ;
+        border-radius:  .8rem;
+        display: block;
+        gap: 1Rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        }
+        .pq1 h1{
+          line-height: 6rem;
+          margin-top: 2rem;
+          margin-bottom:6rem;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+          font-size: 7.5rem;
+          color: #cf3119;;
+        }
+      .pq1 h2{
+        line-height: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+        font-size: 3.5rem;
+        color: #cf3119;;
+      }
+      .pq1 p, a{
+        text-shadow: 2px 2px 4px #cf311981;
+        color: #f7f0ef;
+       font-size: 1.8rem ;
+       margin-bottom: 2rem;
+      }
+      .pq1 button{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+        margin-left: 23%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      }
+  
+      /*PORTIFÓLIO-*/  
+    .port-cont {
+      display: block;
+      border-top: solid #cf3119;
+      width: 100%vh; 
+      height: auto;
+      margin-left: .5rem;
+      margin-top: 8rem;
+      background-color: #333 ;
+        padding: 1.6rem; 
+      }
+    .portbox p {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+      margin-top: 1.8rem;
+      color: #f7f0ef;
+      font-size: 1.8rem ; 
+    }
+    .portbox h1{
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+      margin-top: 4rem;
+      font-size: 3.5rem;
+      color: #cf3119;;
+    }
+
+
+  /* GALERIA HORIZ*/
+
+  .gallery-roll {
+    padding: .5rem;
+    width: 90rem; 
+    height: 80rem;
+    display: flex;
+    align-items: center;  
+    gap: .5rem; /* Espaçamento entre os boxes */
+    white-space: nowrap; /* Impede a quebra de linha */
+    margin-bottom: 1rem;
+}
+  .gal-hor{
+  
+    box-sizing: border-box;
+    display: flex;
+    cursor: grab; /* Mostra que o elemento pode ser arrastado */
+  }
+.gallery-box {
+  margin: 55px 15px 15px 15px;
+  flex: 0 0 auto; /* Impede que as caixas encolham ou cresçam */
+  width: 37rem; 
+  height: 65rem;
+  background-color: #cf3119;
+  border:solid #972210 ;
+  align-items: center;
+  border-radius: .5rem;
+  
+  
+} 
+.gallery-box img {
+      margin-left: 2.4rem;
+      margin-top: 1rem;   
+      margin-bottom: 2rem;     
+      border-radius: .5rem;
+      width: 30rem;
+      height: 23rem;
+      /* object-fit: cover ; */
+}
+.gallery-box h1 {
+  margin-top: 2.5rem;;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+  color: #f7f0ef;
+  font-size: 3rem;
+}
+.gallery-box h2 {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  color: #101823;
+  font-size: 2.0rem;
+}
+.gallery-box h3 {
+  line-height: 3.0rem;
+  padding: .5rem;
+ margin-top: 1.5rem;
+  margin-left: .5rem;
+  margin-bottom: 1.5rem;
+  color: #101823;
+  font-size: 2.5rem;
+
+} 
+.gallery-box p {
+  margin-top: 1.5rem;
+  margin-left: .5rem;
+  margin-right: 3rem;
+  text-align: left;
+  white-space: normal;
+  color: #f7f0ef;
+  font-size: 1.8rem;
+} 
+
+
+ /*DEPOIMENTOS -*/
+
+       /*container geral*/
+       .depocont {
+        width: 100%vh; 
+        height: 135rem;
+        background-color: #333;
+        border: solid #972210;
+        align-items: center;  
+        gap: 12rem; /* Espaçamento entre os boxes */
+        white-space: nowrap; /* Impede a quebra de linha */
+        border-radius: 8px;
+        margin-left: .5px;
+        overflow-x: auto; /* Habilita a rolagem horizontal */
+        overflow-y: hidden;
+      
+      }
+      .depobox h1{
+        padding-top: 3rem;
+        margin-left: 6.5rem; 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+        margin-top: 4rem;  
+        align-items: center;
+        font-size: 3.5rem;
+        color: #19cf50;;
+      }
+  
+      .depobox button{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+        margin-top: -6rem;   
+         margin-left: 85rem;
+        }
+
+          /*galeria dos comentarios*/
+        .depogrid{
+          gap: ;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* 2 colunas com largura igual */
+        }
+      .gallery-depo {  
+      overflow: auto;
+      margin-left: 1.6rem;  
+      margin-top: -112rem;
+      flex: 0 0 auto; /* Impede que as caixas encolham ou cresçam */
+      width: 27rem; 
+      height: 85rem;
+      background-color: #cf3119;
+      border:solid #972210 ;
+      align-items: center;
+      border-radius: .8rem;}
+
+      .img1 img {
+        
+        filter:invert(100%);
+        margin: 1rem auto -2.5rem 2.5rem;
+        width: 12rem;
+        height: auto;
+      }
+       
+     .gallery-depo p {
+         margin-left: 1.5rem;
+         margin-right: 1.5rem;
+         margin-bottom: 5.5rem;
+          text-align: left;
+          white-space: normal;
+          color: #f7f0ef; 
+          font-size: 1.rem;
+        } 
+    
+        .img2 img {
+          object-fit:cover;
+          border-radius: 50%;
+          margin-left: 1.5rem;
+          width: 6rem;
+          height: 6rem;
+        }
+
+
+      .gallery-depo  h1 {
+        white-space: normal;
+        display: block;
+        margin-left: 8.0rem;
+        margin-top: -7.5rem;
+        color: #f0f7ef;
+        font-size: 1.8rem;
+        padding-bottom: 4.5rem;
+      }
+      .gallery-depo  h2 {
+        white-space: normal;
+        margin-left: 8.0rem;
+        margin-top: -4.5rem;
+        padding-bottom: 2.5rem;
+        color: #101823;
+        font-size: 1.5rem;
+      }
+
+      .gallery-depo a {
+        display: block;
+        margin-left: 1.5rem;
+        margin-right: 1.0rem;
+        align-items: center;
+        white-space: normal;
+        color: #f7f0ef; 
+        font-size: 1.5rem;
+       } 
+    
+       
+.talk2{ 
+margin-top: -22rem;
 }
 
+.talk2 button{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
+  margin-top: -6rem;   
+   margin-left: 85rem;
+  }
+
+     
 
 
 
