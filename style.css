@@ -9,6 +9,7 @@
       font-size: 62.5%;
 }
 body {
+    
     background-color: #333;
     line-height: 2rem;
 }
@@ -33,24 +34,26 @@ button:hover {
 }
 
 /*HEADER FIXO*/
-.pagefix{
+.pagefix{       
+    position: absolute; 
+    width: 41rem;
+    height: 5rem;
     background-repeat: no-repeat;
     background-image: url(./assets/05.png);
     background-position: left;
     background-size: 3rem;
-    padding-top: .8rem;
+    padding-bottom: 2rem;
     padding-left:4.5rem;
-    width:100%vh;
-    height: 4.5rem;
+
 }
-header {
+header { height: 5rem;
+      z-index: 4;
       padding: .5rem;
-      position: absolute; 
       background-color: #333; 
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     }  
 .pagefix a { 
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #f0f0f0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
         text-decoration: none;
@@ -72,11 +75,11 @@ header {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 100%;
-      max-width: 120rem;
+      width: 41rem;
       height: 58rem;
     }
     .imagem-secundaria {
+      z-index: 1;
         margin-left: 14.5rem;
         margin-top: 40.69rem;
         position: absolute;
@@ -89,10 +92,10 @@ header {
         z-index: 0; /* Atrás do texto, mas acima do fundo */
     }
     .box h1{
-          font-family: "Mulish", sans-serif;
           font-size: 3.9rem;
           line-height:3.4rem;
-          color:#cf3119;
+          color:#cf3119;          font-family: "Mulish", sans-serif;
+
           margin-top: 5rem;
           margin-bottom: 2.5rem;
     }
@@ -103,7 +106,7 @@ header {
     }
     .one-button{
       position: absolute; 
-      z-index: 10;
+      z-index: 1;
         padding-top: 2rem;
         margin-left: 20%;
      }
@@ -111,11 +114,12 @@ header {
 /* BOX2- NOSSO TRABALHO */
   .container-2 {
     background-color: #cf311917;
-    margin: 1rem .5rem 1.5rem .5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     border: solid #cf3119;
     border-radius: .8rem;
     padding: 2.5rem;
-    width : 100%vh;
+    width: 41.2rem;
     height: 30rem;
   }
   .container-2 h1{
@@ -133,18 +137,17 @@ header {
    
   }
   .two-button {
-    margin-left: 5rem;
-    margin-top: 5rem;
-   
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
   }
-
 /* GALERIA 1 GRID 4:1 */
 .gallery{      
   overflow: scroll; 
-  width: 39rem;
+  width: 40rem;
   padding: .5rem;
   margin-top: 3.2rem;
-  margin-left: .5rem;
+  margin-left: .8rem;
   display: grid;
   grid-template-columns:repeat(4, 1fr);
   gap: 1.2rem;
@@ -200,13 +203,14 @@ margin-bottom: 22.5rem;
 .item:hover img{ /* confg imagem grid*/
   filter: invert(00%); }
 
+
 /*GRID 3:1- DIVIDIDO EM 2 PARTES */
 .service  {  /* area onde esta o grid*/
-  width: 100%vh;
+  width: 41rem;
   height:auto;
-margin-top: 2.5rem;
-padding: .5rem;
-margin: solid green;
+  margin-top: 2.5rem;
+  padding: .5rem;
+  margin: solid green;
  } 
    .item-2{   /*desenho da caixa do grid*/
     margin-bottom: 2rem;
@@ -314,7 +318,7 @@ margin: solid green;
 
     /*BOX PRA QUEM*/
       .p-quem{  /*config area caixa*/
-        width: 100%VH; 
+        width: 41rem; 
         height: auto;
         background-color: #333 ;
         border-radius:  .8rem;
@@ -484,8 +488,6 @@ margin: solid green;
     font-size: 3.5rem;
     color: #cf3119;;
   }
-
-
           /*galeria dos comentarios*/
         .depogrid{
           margin-top: 3rem;
@@ -533,8 +535,6 @@ margin: solid green;
             width: 6rem;
             height: 6rem;
           }
-
-
         .gallery-depo  h1 {
           white-space: normal;
           display: block;
@@ -574,7 +574,86 @@ margin: solid green;
               margin-top: 2rem;
              }
       
+@media (min-width:700px) {
 
+  header {
+    width: 100%;
+    position: fixed; 
+    height: 6rem;
+    background-color: #333; 
+    padding: .5rem 5rem ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  } 
+  .pagefix{
+    width: 100%;
+    padding-top: 2rem;
+    height: 6rem; }
 
+  header ul li { 
+    white-space: nowrap;
+    padding: 1rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.596);
 
+  }
+
+  .box {
+    background-size: cover;
+        width: 100%;
+        height: 50rem;
+  }
+  .imagem-secundaria { 
+    filter: hue-rotate(1098deg) grayscale(15%) ;       
+    margin-left: 65rem;
+    margin-top: 10rem;
+    width: 50rem;
+    height: 50rem;
+  }
+  .box h1{
+width: 50rem;
+  }
+  .box a{
+    width: 7rem;
+  }
+  .container-2 {
+    width: 100%;
+    height: 25rem;
+  }
+  .two-button {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 5rem;  }
+.gallery {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+.service{
+overflow: auto;
+width: 120rem;
+height: 95rem;
+margin-top: 6.2rem;
+margin-bottom:3.2rem ;  
+display: grid;
+grid-template-columns:repeat(3, 1fr);
+}
+.item-2{     
+  margin-bottom: 1rem;
+}
+.p-quem{
+  border: solid #972210;
+  padding: 2rem;
+  width: 120rem;
+
+}
+.depogrid {
+  overflow-y: hidden;}
+.talk2{    width: 120rem;
+  height: 30rem;}
+
+  .talk2 button{  
+
+    display: flex;
+margin-left: 40%;    margin-top: 5rem;  
+  }
+}
 
